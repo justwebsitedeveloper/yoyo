@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./img/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/plyr.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./js/OwlCarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="css/hy-drawer.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/hy-drawer.min.js"></script>
+    <script src="./js/header.js"></script>
+    <title>YOYO Starz - Samantha's Profile</title>
+</head>
+
+<body>
+    <div class="modal fade bd-example-modal-xl show" tabindex="-1" id="popupmodal" role="dialog"
+        aria-labelledby="myExtraLargeModalLabel" aria-modal="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content popup_bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    &times;
+                </button>
+                <div class="modal-body disflex modal_pad5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="popup_logo">
+                                <img src="img/logo.svg">
+                            </div>
+                            <div class="modal-camera-icon">
+                                <img src="img/popup/video-call-icon.png">
+                            </div>
+                            <p class="popup_text text-white">Your favourite STARZ
+                                    <br />are now just a click away!</p>
+                            <div class="d-flex store-icons-home">
+                                <div class="mr-3">
+                                    <a href="#">
+                                        <img src="./img/home/Gplay.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ml-3">
+                                    <a href="#">
+                                        <img src="./img/home/istore.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 popup_banner_div">
+                            <img class="popup_banner_img" src="./img/home/banner-videocall.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="h-top-fixed">
+            <nav class="navbar navbar-expand-lg navbar-light" id="header_nav">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto profile-navbar">
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo-about.html">About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="starzfeed.html">Starz Feed
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="yoyo_starz.html">Yoyo Starz</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-download">Download</button>
+                            </li>
+                            <li class="nav-item">
+                                <div class="lang-drop">
+
+                                    <select class="lang-selector">
+                                        <option value="english" selected>ENG</option>
+                                        <option value="tamil">தமிழ்</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="mob_header" class="col d-lg-none">
+            <div class="col-2 float-left p-0">
+                <a id="dcmenuEl" href="javascript:void(0);">
+                    <img src="./img/Hamburger/menu.png"  class="fa fa-bars">
+                </a>
+
+            </div>
+            <div class="col-7 float-left pl-0">
+                <div style="width: 160px;margin: 0 auto">
+                    <div class="logo_div">
+                        <img src="img/logo-color.svg" class="logowid" title="Yoyo Starz" alt="YOYO Starz"
+                            onclick="window.location.href = 'index.html';">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div style="clear:both"></div>
+        </div>
+        <div class="newclass_menu_query1" id="responsivemnu" data-prevent-default="true" mouse-events="false" style="display:none">
+            <div class="res_container pad0">
+                   
+                <ul class="mobile_menu_ul p-0">
+                    <li class="">
+                        <div class="col-10 float-left p-0"><img src="img/Hamburger/logo-color.png"></div>
+                        <div class="col-2 float-right p-0 colse_div" ><img  src="img/Hamburger/close.png"></div>
+                        <div class="clearfix"></div>
+                </li>
+                <li class="lang_selector">
+                    <span class="lang eng active mr-2" id="english">English |</span>
+                    <span class="lang tam " id="tamil">தமிழ்</span>
+                </li>
+                    <li><div class="menu_brd"></div></li>
+                    <li id="parent_home_mob">
+                        <a class="" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="yoyo-about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="starzfeed.html">YOYO Feed</a>
+                    </li>
+                    <li>
+                        <a href="yoyo_starz.html">YOYO Starz</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/home/Gplay.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/home/istore.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </header>
+    <section class="profile_banner">
+        <div class="h-banner profile-banner">
+            <img class="h-banner-img " src="./img/profile/banner.png" alt="About Banner">
+            <div class="profile-banner-content">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-md-6 col profile-details">
+                            <h4>Samantha</h4>
+                            <h5>Akkineni</h5>
+                            <div class="profile-likes"><img src="./img/starz/heart.png" alt=""> <span>5.1 M</span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="mobile_view text-center">
+            <div class="profile_img_view">
+                <img class="mob_prof" src="./img/profile/samantha_banner.png">
+            </div>
+        </div>
+    <section class="profile-about">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-4 profile-about-left">
+                    <h3>About</h3>
+                    <h4>Samantha</h4>
+                    <div class="col text-right prof_follow"><img src="./img/starz/heart.png" alt=""> <span>5.1 M</span></div>
+                    <p>Samantha Akkineni is an Indian actress and model. She has established a career in the Telugu and
+                        Tamil film industries. She has emerged as a leading actress in the South Indian film industry.
+                        While pursuing a degree in commerce, Samantha worked part-time on modelling assignments. </p>
+                </div>
+                <div class="col-md-7 profile-about-right">
+                    <div class="row">
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./img/profile/birthday.png" alt="">
+                            <h6>Birthday</h6>
+                            <p>June 30, 1989</p>
+                        </div>
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./img/profile/nationality.png" alt="">
+                            <h6>Nationality</h6>
+                            <p>Indian</p>
+                        </div>
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./img/profile/Occupation.png" alt="">
+                            <h6>Occupation</h6>
+                            <p>Actress</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./img/profile/First-movie.png" alt="">
+                            <h6>First Movie</h6>
+                            <p>Ye Maaya Chesave</p>
+                        </div>
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./img/profile/industry.png" alt="">
+                            <h6>Industry</h6>
+                            <p>Kollywood,<br> Tollywood</p>
+                        </div>
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./img/profile/favourite-food.png" alt="">
+                            <h6>Favourite Food</h6>
+                            <p>Pasta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  class="in-the-news-section">
+            <h3 class="profile-section-head text-center">In the News</h3>
+            
+        <div class="container">
+            <div class="col-md-12 disflex">
+                <div class="col col-md-4 ">
+                    <a href="news.html">
+                        <div class="in-the-news-div">
+                            <img class="" src="img/profile/inthenews1.png">
+                            <div class="news-body">
+                                <h4 class="title">YOYO partners with Vijay films to promotive movie</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col-md-4 ">
+                        <a href="news.html">
+                    <div class="in-the-news-div">
+                        <img class="" src="img/profile/inthenews2.png" alt="Card image cap">
+                        <div class="news-body">
+                            <h4 class="title">YOYO partners with Vijay films to promotive movie</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col col-md-4 ">
+                        <a href="news.html">
+                    <div class="in-the-news-div">
+                        <img class="" src="img/profile/inthenews3.png" alt="Card image cap">
+                        <div class="news-body">
+                            <h4 class="title">YOYO partners with Vijay films to promotive movie</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                </div>
+                </div>
+               
+
+    </section>
+        <div class="section profile-section exclusive-videos">
+            <h3 class="profile-section-head text-center">Exclusive Videos</h3>
+            <div class="profile-section-content">
+                <div class="pictures-section">
+                <div class="video-section owl-carousel owl-them">
+                    <div class="item">
+                      <div>
+                    <video class="js-player" crossorigin playsinline poster="./img/profile/video-assests/trailer1.png">
+                            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+                        </video>
+                </div>
+                  </div>
+                      <div class="item">
+                      <div>
+                      <video class="js-player" crossorigin playsinline poster="./img/profile/video-assests/trailer2.png">
+                            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+                        </video>
+                      </div>
+                  </div>
+                      <div class="item">
+                      <div>
+                      <video class="js-player" crossorigin playsinline poster="./img/profile/video-assests/trailer3.png">
+                            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+                        </video>
+                      </div>
+                  </div>
+                </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="section profile-section exclusive-pictures">
+            <h3 class="profile-section-head text-center">Exclusive Pictures</h3>
+            <div class="profile-section-content">
+                <div class="pictures-section">
+                    <div class="img-section owl-carousel owl-them">
+                        <div class="item">
+                            <img src="img/profile/expics-1.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/profile/expics-2.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/profile/expics-3.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/profile/expics-4.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/profile/expics-1.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="img/profile/expics-2.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section profile-section did-you-know">
+            <div class="profile-section-content">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="did-you-know-content">
+                                <h3 class="profile-section-head">Did <br /> You Know!</h3>
+                                <div class="did-you-know-inner">
+                                    <p>Samantha won</p>
+                                    <p>4 Film fare awards</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="did-you-know-img">
+                                <img src="./img/profile/samantha.png" alt="">
+                                <p class="did-you-know-name">Samantha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section profile-section trailers">
+            <h3 class="profile-section-head text-center trailer_head">Trailers</h3>
+            <div class="profile-section-content">
+                <div class="pictures-section">
+                    <div class="trailers-section owl-carousel owl-them">
+                        <div class="item">
+                            <div class="player plyr__video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/ByXwBjR-o5c?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                                    allowfullscreen allowtransparency allow="autoplay"></iframe>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="player plyr__video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/MJxEQPMh_io?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                                    allowfullscreen allowtransparency allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="player plyr__video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/3n3L428I8MQ?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                                    allowfullscreen allowtransparency allow="autoplay"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section latest-movies">
+            <h3 class="text-center latest_movies_head">Latest Movies</h3>
+            <div class="latest_movies_section">
+                <div class="container">
+                    <div class="col-md-12 d-lg-flex d-md-flex p-0 mb-5">
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="img/profile/latest-movies/movies_1.png">
+                            <div class="movie_name">Theri</div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="img/profile/latest-movies/movies_2.png">
+                            <div class="movie_name">Neethanae En Ponvasantham</div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="img/profile/latest-movies/movies_3.png">
+                            <div class="movie_name">Irumbu Thirai</div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="img/profile/latest-movies/movies_4.png">
+                            <div class="movie_name">A AA</div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="img/profile/latest-movies/movies_5.png">
+                            <div class="movie_name">Mersal</div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="img/profile/latest-movies/movies_6.png">
+                            <div class="movie_name">Seemaraja</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer1">
+                <div class="container d-flex justify-content-between flex-wrap p-0">
+                    <div class="foot-left col-md-4">
+                        <img src="./img/logo-color.svg" alt="">
+                        <p>YOYO is a socially engaging, mobile-based application that contains various user-friendly
+                            platforms that connect celebrities and their fans. </p>
+                        <strong>Copyright 2018 &copy; All Rights Reserved</strong>
+                    </div>
+                    <div class="foot-right d-flex flex-wrap col p-0">
+                        <div class="foot-quick-links col ">
+                            <div class="foot-right-title">YOYO</div>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo-about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="starzfeed.html">Starz Feed</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo_starz.html">YOYO Starz</a>
+                                </li>
+                                <li>
+                                    <a href="bhishma-about.html">Bhishma</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Community</div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCK8D-_Ru3Z_tNyi8xWXgnag?view_as=subscriber" target="_blank">YouTube</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/yoyostarz.starz.9" target="_blank">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/yoyostarz4u/" target="_blank">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/yoyostarz4u" target="_blank">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Legal</div>
+                            <ul>
+                                <li>
+                                    <a href="privacy.html" target="_blank">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html" target="_blank">Terms and Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Help</div>
+                            <ul>
+                                <li>
+                                    <a href="yoyo-about.html#contact-us">Get in touch</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-foot text-center text-white">
+                Powered by BHISHMA LABS TAMIL PVT.LTD
+            </div>
+        </footer>
+
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/OwlCarousel/js/owl.carousel.js"></script>
+        <script src="./js/plyr.js"></script>
+        <script>const player = new Plyr('.player');</script>
+        <script>
+         
+            $('.img-section').owlCarousel({
+                stagePadding: 200,
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+                lazyLoad: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        stagePadding: 60
+
+                    },
+                    600: {
+                        items: 1,
+
+                    },
+                    1000: {
+                        items: 2,
+
+                    },
+                    1200: {
+                        items: 2,
+
+                    },
+                    1400: {
+                        items: 2,
+
+                    },
+                    1600: {
+                        items: 2,
+
+                    },
+                    1800: {
+                        items: 2,
+
+                    }
+                }
+
+            })
+           
+            $('.video-section').owlCarousel({
+    stagePadding: 200,
+    loop:true,
+    margin:10,
+    nav:true,
+    items:1,
+    lazyLoad: true,
+    dots: false,
+  responsive:{
+        0:{
+            items:1,
+            stagePadding: 60
+        },
+        600:{
+            items:1,
+            stagePadding: 100
+        },
+        1000:{
+            items:1,
+            stagePadding: 200
+        },
+        1200:{
+            items:1,
+            stagePadding: 250
+        },
+        1400:{
+            items:1,
+            stagePadding: 300
+        },
+        1600:{
+            items:1,
+            stagePadding: 350
+        },
+        1800:{
+            items:1,
+            stagePadding: 400
+        }
+    }
+})
+$('.trailers-section').owlCarousel({
+    stagePadding: 200,
+    loop:true,
+    margin:10,
+    nav:true,
+    items:1,
+    lazyLoad: true,
+    dots: false,
+  responsive:{
+        0:{
+            items:1,
+            stagePadding: 60
+        },
+        600:{
+            items:1,
+            stagePadding: 100
+        },
+        1000:{
+            items:1,
+            stagePadding: 200
+        },
+        1200:{
+            items:1,
+            stagePadding: 250
+        },
+        1400:{
+            items:1,
+            stagePadding: 300
+        },
+        1600:{
+            items:1,
+            stagePadding: 350
+        },
+        1800:{
+            items:1,
+            stagePadding: 400
+        }
+    }
+})
+
+var playerSettings = {
+      controls : ['play-large'],
+      fullscreen : { enabled: false},
+      resetOnEnd : true,
+      hideControls  :true,
+      autopause: true,
+  clickToPlay:true,
+      keyboard : false,
+    }
+
+const players = Plyr.setup('.js-player', playerSettings);
+
+ players.forEach(function(instance,index) {
+            instance.on('play',function(){
+                players.forEach(function(instance1,index1){
+                  if(instance != instance1){
+                        instance1.pause();
+                    }
+                });
+            });
+        });
+
+
+
+
+
+
+$('.video-section,.trailers-section').on('translated.owl.carousel', function (event) {
+  players.forEach(function(instance,index1){
+                  instance.pause();
+                });
+}); 
+            
+
+            
+
+ 
+            
+           
+
+            
+            $('.news_slider').owlCarousel({
+                nav: true,
+                items: 1,
+                loop: true,
+                dots: false,
+                margin: 30,
+
+                responsive: {
+                0: {
+                    items: 1,
+                    margin: 10,
+                },
+                600: {
+                    items: 1,
+                    margin: 10,
+                },
+                768: {
+                    items: 2,
+                    margin: 10,
+                },
+                800: {
+                    items: 2,
+                    margin: 10,
+                },
+                900: {
+                    items: 3,
+                    margin: 10,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
+            });
+            $(".owl-nav").addClass("middle-fixed");
+           /* $('.news_slider').on('translated.owl.carousel', function (event) {
+                $('.owl-item').css({ "border": "none", "border-radius": "5px" });
+                $('.owl-item.active').eq(0).css({ "border": "solid 1px #FE0196" });
+                $('.owl-item.active').eq(1).css({ "border-radius": "5px", "box-shadow": "rgba(0, 0, 0, 0.22) 4px 0px 12px 0px" });
+                $('.owl-item.active').eq(2).css({ "border": "solid 1px #FFA427", "border-radius": "5px" });
+            });
+
+          
+
+            $(document).ready(function () {
+                $('.owl-item').css({ "border": "none", "border-radius": "5px" });
+                $('.owl-item.active').eq(0).css({ "border": "solid 1px #FE0196" });
+                $('.owl-item.active').eq(1).css({ "border-radius": "5px", "box-shadow": "rgba(0, 0, 0, 0.22) 4px 0px 12px 0px" });
+                $('.owl-item.active').eq(2).css({ "border": "solid 1px #FFA427" });
+                const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+            });*/
+        </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./../img/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="./../css/bootstrap.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/responsive.css">
+   
+
+    <link rel="stylesheet" href="./../css/font-awesome/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <link href="./../css/hy-drawer.css" rel="stylesheet" type="text/css">
+  
+    <script defer src="./../js/hy-drawer.min.js"></script>
+    <script src="./../js/header.js"></script>
+
+    <title>YOYO-News</title>
+</head>
+
+<body class="greybg tamil">
+        <div class="modal fade bd-example-modal-xl show" tabindex="-1" id="popupmodal" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-modal="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content popup_bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    &times;
+                </button>
+                <div class="modal-body disflex modal_pad5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="popup_logo">
+                                <img src="./../img/logo.svg">
+                            </div>
+                            <div class="modal-camera-icon">
+                                <img src="./../img/popup/video-call-icon.png">
+                            </div>
+                            <p class="popup_text text-white">உங்கள் அபிமான நட்சத்திரங்கள் உங்களுக்காக. எங்கேயும் எப்போதும்</p>
+                            <div class="d-flex store-icons-home">
+                                <div class="mr-3">
+                                    <a href="#">
+                                        <img src="./../img/home/Gplay.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ml-3">
+                                    <a href="#">
+                                        <img src="./../img/home/istore.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 popup_banner_div">
+                            <img class="popup_banner_img" src="./../img/home/banner-videocall.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+            <div class="">
+                <nav class="navbar navbar-expand-lg navbar-light" id="header_nav">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./../img/logo-color.svg" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse feed-navbar" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto tamil_header">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="yoyo-about.html">எங்களை பற்றி
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="starzfeed.html">நட்சத்திர தொகுப்பு
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="yoyo_starz.html">யோயோ நட்சத்திரங்கள்</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-download">டவுண்லோட்</button>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="lang-drop">
+    
+                                        <select class="lang-selector">
+                                            <option value="english" >ENG</option>
+                                            <option value="tamil" selected>தமிழ்</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="mob_header" class="col d-lg-none">
+                <div class="col-2 float-left p-0">
+                    <a id="dcmenuEl" href="javascript:void(0);">
+                        <img src="./../img/Hamburger/menu.png"  class="fa fa-bars">
+                    </a>
+    
+                </div>
+                <div class="col-7 float-left pl-0">
+                    <div style="width: 160px;margin: 0 auto">
+                        <div class="logo_div">
+                            <img src="./../img/logo-color.svg" class="logowid" title="Yoyo Starz" alt="YOYO Starz" onclick="window.location.href = 'index.html';">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div style="clear:both"></div>
+            </div>
+            <div class="newclass_menu_query1" id="responsivemnu" data-prevent-default="true" mouse-events="false" style="display:none">
+                <div class="res_container pad0">
+                       
+                    <ul class="mobile_menu_ul p-0">
+                        <li class="">
+                            <div class="col-10 float-left p-0"><img src="./../img/Hamburger/logo-color.png"></div>
+                            <div class="col-2 float-right p-0 colse_div" ><img  src="./../img/Hamburger/close.png"></div>
+                            <div class="clearfix"></div>
+                    </li>
+                    <li class="lang_selector">
+                        <span class="lang eng  mr-2" id="english">English |</span>
+                        <span class="lang tam active" id="tamil">தமிழ்</span>
+                    </li>
+                        <li><div class="menu_brd"></div></li>
+                        <li id="parent_home_mob">
+                            <a class="" href="index.html">ஹோம்</a>
+                        </li>
+                        <li>
+                            <a href="yoyo-about.html">எங்களை பற்றி</a>
+                        </li>
+                        <li>
+                            <a href="starzfeed.html">நட்சத்திர தொகுப்பு</a>
+                        </li>
+                        <li>
+                            <a href="yoyo_starz.html">யோயோ நட்சத்திரங்கள்</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./../img/home/Gplay.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./../img/home/istore.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+    
+    
+        </header>
+
+    <section class="container news-section-div">
+        <div class="col-md-12 p-0">
+            
+            <div class="news_section">
+                <div class="mb-3 head_section">
+                    <h1>YOYO partners with Vijay films to promotive movie</h1>
+                    <div><span class="">Posted On February12,2019</span></div>
+                </div>
+                <div class="news_img_sec mb-3">
+                        <img class="news_img" src="./../img/news/news-banner1.jpg">
+                </div>
+              <div class="news_content_sec mb-3">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+              </div>
+                
+            </div>
+            <hr>
+            <div class="news_section">
+                    <div class="mb-3 head_section">
+                        <h1>YOYO partners with Vijay films to promotive movie</h1>
+                        <div><span class="">Posted On February12,2019</span></div>
+                    </div>
+                    <div class="news_img_sec mb-3">
+                            <img class="news_img" src="./../img/news/news-banner2.jpg">
+                    </div>
+                  <div class="news_content_sec mb-3">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                  </div>
+                    
+                </div>
+                <hr>
+                <div class="news_section">
+                        <div class="mb-3 head_section">
+                            <h1>YOYO partners with Vijay films to promotive movie</h1>
+                            <div><span class="">Posted On February12,2019</span></div>
+                        </div>
+                        <div class="news_img_sec mb-3">
+                                <img class="news_img" src="./../img/news/news-banner3.jpg">
+                        </div>
+                      <div class="news_content_sec mb-3">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                      </div>
+                        
+                    </div>
+                    <hr>
+        </div>
+    </section>
+
+    <footer>
+            <div class="footer1">
+                <div class="container d-flex justify-content-between flex-wrap p-0">
+                    <div class="foot-left col-md-4">
+                        <img src="./../img/logo-color.svg" alt="">
+                        <p>நட்சத்திரங்களையும், ஃபேன்களையும் இணைக்கும் ஒரு நவீன செயலிதான் யோயோ.</p>
+                        <strong>பதிப்புரிமை 2018 &copy; அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை</strong>
+                    </div>
+                    <div class="foot-right d-flex flex-wrap col p-0">
+                        <div class="foot-quick-links col ">
+                            <div class="foot-right-title">யோயோ</div>
+                            <ul>
+                                <li>
+                                    <a href="index.html">ஹோம்</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo-about.html">எங்களை பற்றி</a>
+                                </li>
+                                <li>
+                                    <a href="starzfeed.html">நட்சத்திர தொகுப்பு</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo_starz.html"> யோயோ நட்சத்திரங்கள்</a>
+                                </li>
+                                <li>
+                                    <a href="bhishma-about.html">பீஷ்மா</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">கம்யூனிட்டி</div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCK8D-_Ru3Z_tNyi8xWXgnag?view_as=subscriber" target="_blank">யூடியூப்</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/yoyostarz.starz.9" target="_blank">பேஸ்புக்</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/yoyostarz4u/" target="_blank">இன்ஸ்டாகிராம்</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/yoyostarz4u" target="_blank">ட்விட்டர்</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">லீகல்</div>
+                            <ul>
+                                <li>
+                                    <a href="privacy.html" target="_blank">தனியுரிமை கொள்கை</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html" target="_blank">விதிமுறைகள் மற்றும் நிபந்தனைகள்</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">உதவி</div>
+                            <ul>
+                                <li>
+                                    <a href="yoyo-about.html#contact-us">தொடர்பில் இருங்கள்</a>
+                                </li>
+                                <li>
+                                    <a href="#">அடிக்கடி கேட்கப்படும் கேள்விகள்</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="div-foot text-center text-white">
+                Powered by பீஷ்மா மீடியா லேப்ஸ் தமிழ் பிரைவேட் லிமிட்டெட்
+            </div>
+        </footer>
+        
+       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>

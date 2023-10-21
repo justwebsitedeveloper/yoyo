@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./img/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/hy-drawer.css">
+    <link rel="stylesheet" href="./css/jquery.hislide.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/hy-drawer.min.js"></script>
+    <script src="./js/header.js"></script>
+    <title>YOYO Starz - Home</title>
+</head>
+
+<body>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+
+    <div class="modal fade bd-example-modal-xl show" tabindex="-1" id="popupmodal" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-modal="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content popup_bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    &times;
+                </button>
+                <div class="modal-body disflex modal_pad5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="popup_logo">
+                                <img src="img/logo.svg">
+                            </div>
+                            <div class="modal-camera-icon">
+                                <img src="img/popup/video-call-icon.png">
+                            </div>
+                            <p class="popup_text text-white">Your favourite STARZ
+                                <br />are now just a click away!</p>
+                            <div class="d-flex store-icons-home">
+                                <div class="mr-3">
+                                    <a href="#">
+                                        <img src="./img/home/Gplay.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ml-3">
+                                    <a href="#">
+                                        <img src="./img/home/istore.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 popup_banner_div">
+                            <img class="popup_banner_img" src="./img/home/banner-videocall.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="h-top-fixed">
+            <nav class="navbar navbar-expand-lg navbar-light" id="header_nav">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo-about.html">About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="starzfeed.html">Starz Feed
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo_starz.html">Yoyo Starz</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-download">Download</button>
+                            </li>
+                            <li class="nav-item">
+                                <div class="lang-drop">
+                                    <select class="lang-selector">
+                                        <option value="english" selected>ENG</option>
+                                        <option value="tamil">தமிழ்</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="mob_header" class="col d-lg-none">
+            <div class="col-2 float-left p-0">
+                <a id="dcmenuEl" href="javascript:void(0);">
+                    <img src="./img/Hamburger/menu.png"  class="fa fa-bars">
+                </a>
+            </div>
+            <div class="col-7 float-left p-0">
+                <div style="width: 150px;margin: 0 auto">
+                    <div class="logo_div">
+                        <img src="img/logo-color.svg" class="logowid" title="Yoyo Starz" alt="YOYO Starz" onclick="window.location.href = 'index.html';">
+                    </div>
+                </div>
+            </div>
+
+            <div style="clear:both"></div>
+        </div>
+        <div class="newclass_menu_query1" id="responsivemnu" data-prevent-default="true" mouse-events="false" style="display:none">
+            <div class="res_container pad0">
+
+                <ul class="mobile_menu_ul p-0">
+                    <li class="">
+                        <div class="col-10 float-left p-0">
+                            <img src="img/Hamburger/logo-color.png">
+                        </div>
+                        <div class="col-2 float-right p-0 colse_div">
+                            <img src="img/Hamburger/close.png">
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="lang_selector">
+                        <span class="lang eng active mr-2" id="english">English |</span>
+                        <span class="lang tam " id="tamil">தமிழ்</span>
+                    </li>
+                    <li>
+                        <div class="menu_brd"></div>
+                    </li>
+                    <li id="parent_home_mob">
+                        <a class="" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="yoyo-about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="starzfeed.html">YOYO Feed</a>
+                    </li>
+                    <li>
+                        <a href="yoyo_starz.html">YOYO Starz</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/home/Gplay.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/home/istore.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+    <section class="banner_section">
+        <div id="home-banner" class="carousel slide" data-pause="false" data-intervel="20000" data-ride="carousel">
+            <!-- data-ride="carousel" -->
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item banner1 active">
+                    <div class="container p-0">
+                        <div class="row banner-content-home align-items-center home-banner1">
+                            <div class="col-md-7 home-banner-left">
+                                <img src="./img/home/banner-videocall.png" alt="">
+                            </div>
+                            <div class="col-md-5 home-banner-right">
+                                <h4>Live chat over video calls with your dream STARZ.</h4>
+                                <div class="d-flex store-icons-home text-center">
+                                    <div class="mr-3">
+                                        <a href="#">
+                                            <img src="./img/home/Gplay.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#">
+                                            <img src="./img/home/istore.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item banner2">
+                    <div class="container p-0">
+                        <div class="row banner-content-home align-items-center">
+                            <div class="col-md-7 home-banner-left  home-banner2 text-center">
+                                <div class="plane"></div>
+                                <img src="./img/home/banner-2/phone.png" alt="">
+                            </div>
+                            <div class="col-md-5 home-banner-right">
+                                <div class="plane1"></div>
+                                <h4>Get your favourite STARZ to send you personalised video messages</h4>
+                                <div class="d-flex store-icons-home text-center">
+                                    <div class="mr-3">
+                                        <a href="#">
+                                            <img src="./img/home/Gplay.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#">
+                                            <img src="./img/home/istore.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item banner3">
+                    <div class="container p-0">
+                        <div class="row banner-content-home align-items-center">
+                            <div class="col-md-7 home-banner-left home-banner3 text-center">
+                                <img src="./img/home/banner3-phone.png" alt="">
+
+                            </div>
+                            <div class="col-md-5 home-banner-right">
+                                <h4>Watch live and exclusive broadcast by top YOYO celebrities</h4>
+                                <div class="d-flex store-icons-home text-center">
+                                    <div class="mr-3">
+                                        <a href="#">
+                                            <img src="./img/home/Gplay.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#">
+                                            <img src="./img/home/istore.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item banner4">
+                    <div class="container p-0">
+                        <div class="row banner-content-home align-items-center">
+                            <div class="col-md-7 home-banner-left home-banner4">
+                                <img src="./img/home/banner4-phone.png" alt="">
+
+                            </div>
+                            <div class="col-md-5 home-banner-right">
+                                <h4>Get access to exclusive STAR videos and pictures</h4>
+                                <div class="d-flex store-icons-home text-center">
+                                    <div class="mr-3">
+                                        <a href="#">
+                                            <img src="./img/home/Gplay.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#">
+                                            <img src="./img/home/istore.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#home-banner" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#home-banner" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="gift_bucket">
+        <div class="container p-0">
+            <h4 class="gift-bucket-heading">Gift Bucket</h4>
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="video_bg text-center">
+                        <img class="video_phone_img" src="img/home/gift_bucket/phone-bg.png">
+                        <div class="gift_icons">
+                            <img class="gift_phone" id="autograph_icon" src="img/home/gift_bucket/greeting.png"  data-target="#gift-slide" data-slide-to="0">
+                            <img class="gift_phone" id="video_msg_icon" src="img/home/gift_bucket/videomessage.png" data-target="#gift-slide" data-slide-to="1">
+                            <img class="gift_phone active" id="greetings_icon" src="img/home/gift_bucket/autograph.png" data-target="#gift-slide" data-slide-to="2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5" id="gift_content_section">
+                    <div class="d-flex align-items-center gift-bucket-content">
+                        <div class="col-md-6 gift_bg">
+                            <ul id="gift_bucket_list">
+                                <li class="" id="autograph_li" data-target="#gift-slide" data-slide-to="0">
+                                    <div class="float-left gift_round autograph_act" id="autograph">
+                                            <img class="gift_img active" id="active_greetings" src="img/home/gift_bucket/icons/greetings-active.png">
+                                            <img class="gift_img inactive" id="inactive_greetings" src="img/home/gift_bucket/icons/greetings-inactive.png">
+                                    </div>
+                                </li>
+                                <li class="" id="video_msg_li" data-target="#gift-slide" data-slide-to="1">
+                                    <div class="gift_round video_msg_act" id="video_msg">
+                                        <img class="gift_img inactive" src="img/home/gift_bucket/icons/vm-inactive.png">
+                                        <img class="gift_img active" src="img/home/gift_bucket/icons/vm-active.png">
+                                    </div>
+                                </li>
+                                <li class="active" id="greetings_li">
+                                    <div class="gift_round greetings_act active " id="greetings" data-target="#gift-slide" data-slide-to="2">
+                                            <img class="gift_img inactive" src="img/home/gift_bucket/icons/autograph-inactive.png">
+                                            <img class="gift_img active" src="img/home/gift_bucket/icons/autograph-active.png">
+
+                                       
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gift-title">
+                                <div>
+                                        <p>Greetings</p>
+                                        <span>Greetings</span>
+                                </div>
+                                <div>
+                                    <p>Video Messages</p>
+                                    <span>Video Messages</span>
+                                </div>
+                                <div class="gift-title2">
+                                        <p>Autograph</p>
+                                        <span>Autograph</span>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gifts-content">
+                        <div id="gift-slide" class="carousel slide  mb-5" data-ride="carousel" data-intervel="1000">
+                            <div class="carousel-inner">
+                                    <div class="carousel-item ">
+                                            <h2 class="gift_head">Nothing is more precious than heartfelt greetings! </h2>
+                                            <p class="gift_desc">
+                                                What if this greeting came from your favourite celebrity? Wouldn’t that be very special? With the YOYO App, you can send
+                                                and receive customised greetings and messages from your STARZ to friends, family
+                                                and yourself.
+                                            </p>
+                                        </div>
+                                <div class="carousel-item">
+                                    <h2 class="gift_head">There are some messages you will never delete!</h2>
+                                    <p class="gift_desc">
+                                        Imagine on your very special day you get a personalised video message from your favourite STARZ. With the YOYO App, you can
+                                        request STARZ to send personalised video messages to you or your loved ones that
+                                        they will treasure forever.
+                                    </p>
+                                </div>
+                                
+                                <div class="carousel-item active">
+                                        <h2 class="gift_head">No more waiting in line for autograph</h2>
+                                        <p class="gift_desc">
+                                            Had to wait in queues to get your favourite STARZ’s autograph? And your personal picture? Still didn’t get one? Now you can!
+                                            With YOYO, get your very own, totally customised and personal autograph and photo
+                                            of your favourite celebrities.
+                                        </p>
+    
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="gift_bucket_brd" class="active">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--     
+    <section class="offer_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-5">
+                    <p class="offer-line1"> Download the YOYO App now </p>
+                    <h1 class="offer-percent">30% OFF</h1>
+                    <p class="offer-line2">Use the above code and grab the offer</p>
+                    <p class="offer-validity">*Valid till november 19</p>
+                </div>
+                <div class="col-md-6 text-center mb-5">
+                    <div class="offer_card">
+                        <div class="offer-card-before"></div>
+                        <div class="offer-card-after"></div>
+                        <div class="offer-card-current"></div>
+                        <img class="card-img-offer" src="img/home/offers/offer-card.png">
+                        <div class="offer_text">30% offer on first video call</div>
+                        <div class="offer_code">VDCYO 19</div>
+                        <div class="offer-conditions">* conditions apply</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section> -->
+
+
+    <section class="top">
+        <h4 class="text-center" style="color:#f52faa">Top Celebrities</h4>
+        <div class="container">
+            <div class="row celebrity_slider hidden-xs">
+
+
+                <div class="col-md-12 ">
+
+                    <!-- <img src="img/home/top_celebrities/rect_bg.png" style="height: 800px;">s -->
+                    <div class="bottom-left">
+                        <img src="img/home/top_celebrities/gradient-circle.png">
+                    </div>
+                    <div class="top-left">
+                        <img src="img/home/top_celebrities/phone.png">
+                    </div>
+                    <div class="top-right">
+                        <img src="img/home/top_celebrities/box-pink.png">
+                        <div class="pink_text">
+                            <h4>Samantha</h4>
+                            <p>Your Star on YOYO!</p>
+                        </div>
+                        <div id="wave">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="centered"></div>
+
+
+
+
+                </div>
+
+                <div class="phone_slider">
+                    <div class="slide hi-slide" id="top_celebrity_slider">
+
+                        <ul>
+                            <li>
+                                <img src="img/home/top_celebrities/samantha.png" alt="Samantha" />
+                                <div class="active_celebrity">
+                                    <h4>Samantha</h4>
+                                    <p>Actress</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/home/top_celebrities/sidsriram.png" alt="Sidsriram" />
+                                <div class="active_celebrity">
+                                    <h4>Sidsriram</h4>
+                                    <p>Singer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/home/top_celebrities/arr.png" alt="AR Rahman" />
+                                <div class="active_celebrity">
+                                    <h4>AR Rahman</h4>
+                                    <p>Music Director</p>
+                                </div>
+                            </li>
+                            <li class="active">
+                                <img src="img/home/top_celebrities/aiswarya-rajesh.png" alt="Aishwarya Rajesh" />
+                                <div class="active_celebrity">
+                                    <h4>Aishwarya Rajesh</h4>
+                                    <p>Actress</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/home/top_celebrities/surya.png" alt="Suriya" />
+                                <div class="active_celebrity">
+                                    <h4>Suriya</h4>
+                                    <p>Actor</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/home/top_celebrities/sidsriram.png" alt="Sidsriram" />
+                                <div class="active_celebrity">
+                                    <h4>Sidsriram</h4>
+                                    <p>Singer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/home/top_celebrities/arr.png" alt="AR Rahman" />
+                                <div class="active_celebrity">
+                                    <h4>AR Rahman</h4>
+                                    <p>Music Director</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 top_starz_list  mb-4 parentdiv pr-0">
+                <div class="col-6 col-sm-6 col-md-4 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/home/top_celebrities/samantha.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Samantha</div>
+                        <div class="followers_count">Actress</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/home/top_celebrities/sidsriram.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Sidsriram</div>
+                        <div class="followers_count">Singer</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/home/top_celebrities/arr.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">AR Rahman</div>
+                        <div class="followers_count">Music Director</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/home/top_celebrities/samantha.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Samantha</div>
+                        <div class="followers_count">Actress</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/home/top_celebrities/sidsriram.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Sidsriram</div>
+                        <div class="followers_count">Singer</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/home/top_celebrities/arr.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">AR Rahman</div>
+                        <div class="followers_count">Music Director</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <section class="in-the-news-section">
+        <h3 class="profile-section-head text-center">In the News</h3>
+
+        <div class="container">
+            <div class="col-md-12 disflex  mb-4">
+                <div class="col col-md-4 ">
+                    <a href="news.html">
+                        <div class="in-the-news-div">
+                            <div class="news-individual-cover-img">
+                                <img src="./img/home/news/vijaydevarakonda3.png" alt="">
+                            </div>
+                            <div class="news-individual-body">
+                                <div class="news-individual-title d-flex justify-content-between">
+                                    <h5 class="predominant_color">Vijaydevarakonda</h5>
+                                    <span>2 hours</span>
+                                </div>
+                                <h4 class="news-individual-lead">Suriya's movie to release this Diwali! Catch all the live updates on YOYO Starz</h4>
+                                <p class="news-individual-news">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col col-md-4 ">
+                    <a href="news.html">
+                        <div class="in-the-news-div">
+                            <div class="news-individual-cover-img">
+                                <img src="./img/home/news/kiara-advani-11a.png" alt="">
+                            </div>
+
+                            <div class="news-individual-body">
+                                <div class="news-individual-title d-flex justify-content-between">
+                                    <h5 class="predominant_color">Kiara Advani</h5>
+                                    <span>2 hours</span>
+                                </div>
+                                <h4 class="news-individual-lead">Get live updates and follow every move of your favourite celebrity, Only on YOYO Starz App!</h4>
+                                <p class="news-individual-news">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col-md-4 ">
+                    <a href="news.html">
+                        <div class="in-the-news-div">
+                            <div class="news-individual-cover-img">
+                                <img src="./img/home/news/pink-movie-review-and-rating.png" alt="">
+                            </div>
+                            <div class="news-individual-body">
+                                <div class="news-individual-title d-flex justify-content-between">
+                                    <h5 class="predominant_color">Pink Movie crew</h5>
+                                    <span>2 hours</span>
+                                </div>
+                                <h4 class="news-individual-lead">Pink crew and cast</h4>
+                                <p class="news-individual-news">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="features">
+        <div class="container ">
+            <div class="row justify-content-between features_div">
+                <div class="col-md-3 col">
+                    <img src="img/home/features/privacy.png">
+                    <h4 class="">Privacy and Security</h4>
+                    <p>YOYO protects its users’ personal information that are shared on the App.</p>
+                </div>
+                <div class="col-md-3 col">
+                    <img src="./img/home/features/secured-payment.png">
+                    <h4 class="">Secure Payment</h4>
+                    <p>YOYO provides a secure gateway for all user payments made on the App.</p>
+                </div>
+                <div class="col-md-3 col">
+                    <img src="img/home/features/encrypt.png">
+                    <h4 class="">Encrypted Information</h4>
+                    <p>YOYO encrypts all user information to make it available only to authorised parties. </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <div class="footer1">
+            <div class="container d-flex justify-content-between flex-wrap p-0">
+                <div class="foot-left col-md-4">
+                    <img src="./img/logo-color.svg" alt="">
+                    <p>YOYO is a socially engaging, mobile-based application that contains various user-friendly platforms that
+                        connect celebrities and their fans. </p>
+                    <strong>Copyright 2018 &copy; All Rights Reserved</strong>
+                </div>
+                <div class="foot-right d-flex flex-wrap col p-0">
+                    <div class="foot-quick-links col ">
+                        <div class="foot-right-title">YOYO</div>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="yoyo-about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="starzfeed.html">Starz Feed</a>
+                            </li>
+                            <li>
+                                <a href="yoyo_starz.html">YOYO Starz</a>
+                            </li>
+                            <li>
+                                <a href="bhishma-about.html">Bhishma</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="foot-quick-links col">
+                        <div class="foot-right-title">Community</div>
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCK8D-_Ru3Z_tNyi8xWXgnag?view_as=subscriber" target="_blank">YouTube</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/yoyostarz.starz.9" target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/yoyostarz4u/" target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/yoyostarz4u" target="_blank">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="foot-quick-links col">
+                        <div class="foot-right-title">Legal</div>
+                        <ul>
+                            <li>
+                                <a href="privacy.html" target="_blank">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="terms.html" target="_blank">Terms and Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="foot-quick-links col">
+                        <div class="foot-right-title">Help</div>
+                        <ul>
+                            <li>
+                                <a href="yoyo-about.html#contact-us">Get in touch</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-foot text-center text-white">
+            Powered by BHISHMA LABS TAMIL PVT.LTD
+        </div>
+    </footer>
+   
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.hislide.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $("#popupmodal").modal("show");
+            setTimeout(function () {
+                $("body").addClass("loaded")
+            }, 1000);
+        });
+        $('#top_celebrity_slider').hiSlide({
+            interval: 3000,
+            speed: 500,
+        });
+        $("#gift-slide").on('slide.bs.carousel', function (event) {
+            $('#gift_bucket_list li').removeClass('active');
+            $('#gift_bucket_list li').eq(event.to).addClass('active');
+            $('#gift_bucket_list li div').removeClass('active');
+            $('#gift_bucket_list li div').eq(event.to).addClass('active');
+            $('.gift_icons .gift_phone').removeClass('active');
+            $('.gift_icons .gift_phone').eq(event.to).addClass('active');
+            $('#gift_bucket_list').removeClass("ele" + event.from).addClass("ele" + event.to);
+            $('.gift-title div').eq(event.from).removeClass("gift-title" + event.from);
+            $('.gift-title div').eq(event.to).addClass("gift-title" + event.to);
+            $("#gift_bucket_brd").removeClass().addClass("hr" + event.to);
+        });
+    </script>
+     <script  src="./js/Vibrant.js"></script>
+     <script>
+         $('.in-the-news-div').each(function (index, value) {
+            var src = $(this).find('img').attr('src');
+            var img = document.createElement('img');
+            img.setAttribute('src', src)
+            var vibrant = new Vibrant(img);
+            var swatches = vibrant.swatches()
+            var color = swatches.DarkVibrant.getHex();
+            $(this).find(".predominant_color").css("color", color);
+            $(this).css("border-color", color);
+        });
+     </script>
+</body>
+
+</html>

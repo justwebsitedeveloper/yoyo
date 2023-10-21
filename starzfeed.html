@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./img/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/hy-drawer.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/hy-drawer.min.js"></script>
+    <script src="./js/header.js"></script>
+    <title>YOYO Starz - Starz Feed</title>
+</head>
+
+<body class="greybg">
+    <div class="modal fade bd-example-modal-xl show" tabindex="-1" id="popupmodal" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-modal="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content popup_bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    &times;
+                </button>
+                <div class="modal-body disflex modal_pad5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="popup_logo">
+                                <img src="img/logo.svg">
+                            </div>
+                            <div class="modal-camera-icon">
+                                <img src="img/popup/video-call-icon.png">
+                            </div>
+                            <p class="popup_text text-white">Your favourite STARZ
+                                    <br />are now just a click away!</p>
+                            <div class="d-flex store-icons-home">
+                                <div class="mr-3">
+                                    <a href="#">
+                                        <img src="./img/home/Gplay.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ml-3">
+                                    <a href="#">
+                                        <img src="./img/home/istore.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 popup_banner_div">
+                            <img class="popup_banner_img" src="./img/home/banner-videocall.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="">
+            <nav class="navbar navbar-expand-lg navbar-light" id="header_nav">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="./img/logo-color.svg" alt=""></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto feed-navbar">
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo-about.html">About
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="starzfeed.html">Starz Feed
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo_starz.html">Yoyo Starz</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-download">Download</button>
+                            </li>
+                            <li class="nav-item">
+                                <div class="lang-drop">
+                                    <select class="lang-selector">
+                                        <option value="english" selected>ENG</option>
+                                        <option value="tamil">தமிழ்</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="mob_header" class="col d-lg-none">
+            <div class="col-2 float-left p-0">
+                <a id="dcmenuEl" href="javascript:void(0);">
+                    <img src="./img/Hamburger/menu.png"  class="fa fa-bars">
+                </a>
+            </div>
+            <div class="col-7 float-left pl-0">
+                <div style="width: 160px;margin: 0 auto">
+                    <div class="logo_div">
+                        <img src="img/logo-color.svg" class="logowid" title="Yoyo Starz" alt="YOYO Starz" onclick="window.location.href = 'index.html';">
+                    </div>
+                </div>
+            </div>
+            
+            <div style="clear:both"></div>
+        </div>
+        <div class="newclass_menu_query1" id="responsivemnu" data-prevent-default="true" mouse-events="false" style="display:none">
+            <div class="res_container pad0">
+                   
+                <ul class="mobile_menu_ul p-0">
+                    <li class="">
+                        <div class="col-10 float-left p-0"><img src="img/Hamburger/logo-color.png"></div>
+                        <div class="col-2 float-right p-0 colse_div" ><img  src="img/Hamburger/close.png"></div>
+                        <div class="clearfix"></div>
+                </li>
+                <li class="lang_selector">
+                    <span class="lang eng active mr-2" id="english">English |</span>
+                    <span class="lang tam " id="tamil">தமிழ்</span>
+                </li>
+                    <li><div class="menu_brd"></div></li>
+                    <li id="parent_home_mob">
+                        <a class="" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="yoyo-about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="starzfeed.html">YOYO Feed</a>
+                    </li>
+                    <li>
+                        <a href="yoyo_starz.html">YOYO Starz</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/home/Gplay.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/home/istore.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="live-now-section">
+        <div class="container">
+            <div class="d-flex justify-content-between hidden-xs hidden-sm">
+                <div class="live-stars"><img src="./img/starz/live.png" alt=""></div>
+                <div class="live-stars"><img src="./img/starz/img1.png" alt=""></div>
+                <div class="live-stars"><img src="./img/starz/img3.png" alt=""></div>
+                <div class="live-stars"><img src="./img/starz/img4.png" alt=""></div>
+                <div class="live-stars"><img src="./img/starz/athar.png" alt=""></div>
+                <div class="live-stars"><img src="./img/starz/priya.png" alt=""></div>
+                <div class="live-stars"><img src="./img/starz/sal.png" alt=""></div>
+                <div class="live-stars"><img src="./img/starz/anupama.png" alt=""></div>
+                <div class="live-stars"><img src="./img/starz/vik.png" alt=""></div>
+            </div>
+            <div class="d-flex justify-content-between d-lg-none d-md-none mobile_slider">
+                <div class=""><img src="./img/starz/live.png" alt=""></div>
+                <div class=""><img src="./img/starz/img1.png" alt=""></div>
+                <div class=""><img src="./img/starz/img3.png" alt=""></div>
+                <div class=""><img src="./img/starz/img4.png" alt=""></div>
+                <div class=""><img src="./img/starz/athar.png" alt=""></div>
+                <div class=""><img src="./img/starz/priya.png" alt=""></div>
+                <div class=""><img src="./img/starz/sal.png" alt=""></div>
+                <div class=""><img src="./img/starz/anupama.png" alt=""></div>
+                <div class=""><img src="./img/starz/vik.png" alt=""></div>
+            </div>
+            <div class="justify-content-between hidden-xs d-lg-none d-md-flex mobile_slider2">
+                <div class=""><img src="./img/starz/live.png" alt=""></div>
+                <div class=""><img src="./img/starz/img1.png" alt=""></div>
+                <div class=""><img src="./img/starz/img3.png" alt=""></div>
+                <div class=""><img src="./img/starz/img4.png" alt=""></div>
+                <div class=""><img src="./img/starz/athar.png" alt=""></div>
+                <div class=""><img src="./img/starz/priya.png" alt=""></div>
+                <div class=""><img src="./img/starz/sal.png" alt=""></div>
+                <div class=""><img src="./img/starz/anupama.png" alt=""></div>
+                <div class=""><img src="./img/starz/vik.png" alt=""></div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="feed">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="feed-title">
+                        <h3>Starz feed</h3>
+                    </div>
+                    <div class="feed-body">
+                        <div class="feed-section">
+                            <div class="feed-section-title">
+                                <div class="feed-title-left">
+                                    <div class="feed-profile-pic">
+                                        <img src="./img/starz/trending.png" alt="">
+                                    </div>
+                                    <div class="feed-name">
+                                        <h4>Hrithik Roshan</h4>
+                                        <p>Actor</p>
+                                    </div>
+                                </div>
+                                <div class="feed-title-right">
+                                    2 Minutes ago
+                                </div>
+                            </div>
+                            <div class="feed-content">
+                                <p class="feed-text">Hrithik Roshan Updated is New Profile Picture</p>
+                                <ul class="feed-tags">
+                                    <li>#mohenjadaro</li>
+                                    <li>#photoshoot</li>
+                                    <li>#newmovie</li>
+                                    <li>#bollywood</li>
+                                    <li>#tragedy</li>
+                                </ul>
+                                <div class="feed-media">
+                                    <img src="./img/starz/img.png" alt="">
+                                </div>
+                                <div class="feed-foot">
+                                    <div class="feed-foot-left">
+                                        <div class="feed-like liked"><img src="./img/starz/heart.png" alt=""><span>4.1
+                                                M</span></div>
+                                        <div class="feed-share d-none"><img src="./img/starz/share.png" alt=""><span>Share</span></div>
+                                    </div>
+                                    <div class="feed-foot-right">
+                                        <div class="feed-view"><img src="./img/starz/views.png" alt=""><span>4.1 M</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feed-section">
+                            <div class="feed-section-title">
+                                <div class="feed-title-left">
+                                    <div class="feed-profile-pic">
+                                        <img src="./img/starz/img1.png" alt="">
+                                    </div>
+                                    <div class="feed-name">
+                                        <h4>Nayanthara</h4>
+                                        <p>Actress</p>
+                                    </div>
+                                </div>
+                                <div class="feed-title-right">
+                                    2 Minutes ago
+                                </div>
+                            </div>
+                            <div class="feed-content">
+                                <p class="feed-text">Hrithik Roshan Updated is New Profile Picture</p>
+                                <ul class="feed-tags">
+                                    <li>#mohenjadaro</li>
+                                    <li>#photoshoot</li>
+                                    <li>#newmovie</li>
+                                    <li>#bollywood</li>
+                                    <li>#tragedy</li>
+                                </ul>
+                                <div class="feed-media">
+                                    <img src="./img/starz/img2.png" alt="">
+                                </div>
+                                <div class="feed-foot">
+                                    <div class="feed-foot-left">
+                                        <div class="feed-like"><img src="./img/starz/heart-gray.png" alt=""><span>4.1 M</span></div>
+                                        <div class="feed-share d-none"><img src="./img/starz/share.png" alt=""><span>Share</span></div>
+                                    </div>
+                                    <div class="feed-foot-right">
+                                        <div class="feed-view"><img src="./img/starz/views.png" alt=""><span>4.1 M</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="feed-section">
+                            <div class="feed-section-title">
+                                <div class="feed-title-left">
+                                    <div class="feed-profile-pic">
+                                        <img src="./img/starz/sal.png" alt="">
+                                    </div>
+                                    <div class="feed-name">
+                                        <h4>Kalanithi Maran</h4>
+                                        <p>Producer</p>
+                                    </div>
+                                </div>
+                                <div class="feed-title-right">
+                                    2 Minutes ago
+                                </div>
+                            </div>
+                            <div class="feed-content">
+                                <p class="feed-text">Finally !!
+                                    We proudly presents Ilayathapathy Vijay's next movie "Thalapathy 63" first motion
+                                    poster releases on today 6pm</p>
+                                <ul class="feed-tags">
+                                    <li>#mohenjadaro</li>
+                                    <li>#photoshoot</li>
+                                    <li>#newmovie</li>
+                                    <li>#bollywood</li>
+                                    <li>#tragedy</li>
+                                </ul>
+                                <div class="feed-foot">
+                                    <div class="feed-foot-left">
+                                        <div class="feed-like"><img src="./img/starz/heart-gray.png" alt=""><span>4.1 M</span></div>
+                                        <div class="feed-share d-none"><img src="./img/starz/share.png" alt=""><span>Share</span></div>
+                                    </div>
+                                    <div class="feed-foot-right">
+                                        <div class="feed-view"><img src="./img/starz/views.png" alt=""><span>4.1 M</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+
+                    <div class="feed-title-trend">
+                        <h3>Trending</h3>
+                    </div>
+
+                    <div class="trending-section">
+
+                        <ul>
+                            <li class="individual-trend">
+                                <div class="tend-left">
+                                    <div class="trend-profile-pic">
+                                        <img src="./img/starz/sal.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="tend-right">
+                                    <div class="trend-tag">#mohanjadaro</div>
+                                    <div class="trend-message">Hrithik Roshan Updated is New Profile Picture</div>
+                                </div>
+                            </li>
+                            <li class="individual-trend">
+                                <div class="tend-left">
+                                    <div class="trend-profile-pic">
+                                        <img src="./img/starz/sal.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="tend-right">
+                                    <div class="trend-tag">#mohanjadaro</div>
+                                    <div class="trend-message">Hrithik Roshan Updated is New Profile Picture</div>
+                                </div>
+                            </li>
+                            <li class="individual-trend">
+                                <div class="tend-left">
+                                    <div class="trend-profile-pic">
+                                        <img src="./img/starz/sal.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="tend-right">
+                                    <div class="trend-tag">#mohanjadaro</div>
+                                    <div class="trend-message">Hrithik Roshan Updated is New Profile Picture</div>
+                                </div>
+                            </li>
+                            <li class="individual-trend">
+                                <div class="tend-left">
+                                    <div class="trend-profile-pic">
+                                        <img src="./img/starz/sal.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="tend-right">
+                                    <div class="trend-tag">#mohanjadaro</div>
+                                    <div class="trend-message">Hrithik Roshan Updated is New Profile Picture</div>
+                                </div>
+                            </li>
+                            <li class="individual-trend">
+                                <div class="tend-left">
+                                    <div class="trend-profile-pic">
+                                        <img src="./img/starz/sal.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="tend-right">
+                                    <div class="trend-tag">#mohanjadaro</div>
+                                    <div class="trend-message">Hrithik Roshan Updated is New Profile Picture</div>
+                                </div>
+                            </li>
+                            <li class="individual-trend">
+                                <div class="tend-left">
+                                    <div class="trend-profile-pic">
+                                        <img src="./img/starz/sal.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="tend-right">
+                                    <div class="trend-tag">#mohanjadaro</div>
+                                    <div class="trend-message">Hrithik Roshan Updated is New Profile Picture</div>
+                                </div>
+                            </li>
+                            <li class="individual-trend">
+                                <div class="tend-left">
+                                    <div class="trend-profile-pic">
+                                        <img src="./img/starz/sal.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="tend-right">
+                                    <div class="trend-tag">#mohanjadaro</div>
+                                    <div class="trend-message">Hrithik Roshan Updated is New Profile Picture</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+            <div class="footer1">
+                <div class="container d-flex justify-content-between flex-wrap p-0">
+                    <div class="foot-left col-md-4">
+                        <img src="./img/logo-color.svg" alt="">
+                        <p>YOYO is a socially engaging, mobile-based application that contains various user-friendly platforms that connect celebrities and their fans. </p>
+                        <strong>Copyright 2018 &copy; All Rights Reserved</strong>
+                    </div>
+                    <div class="foot-right d-flex flex-wrap col p-0">
+                        <div class="foot-quick-links col ">
+                            <div class="foot-right-title">YOYO</div>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo-about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="starzfeed.html">Starz Feed</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo_starz.html">YOYO Starz</a>
+                                </li>
+                                <li>
+                                    <a href="bhishma-about.html">Bhishma</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Community</div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCK8D-_Ru3Z_tNyi8xWXgnag?view_as=subscriber" target="_blank">YouTube</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/yoyostarz.starz.9" target="_blank">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/yoyostarz4u/" target="_blank">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/yoyostarz4u" target="_blank">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Legal</div>
+                            <ul>
+                                <li>
+                                    <a href="privacy.html" target="_blank">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html" target="_blank">Terms and Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Help</div>
+                            <ul>
+                                <li>
+                                    <a href="yoyo-about.html#contact-us">Get in touch</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="div-foot text-center text-white">
+                Powered by BHISHMA LABS TAMIL PVT.LTD
+            </div>
+        </footer>
+    <script>
+        $('.mobile_slider').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false,
+            dots: false,
+        });
+        $('.mobile_slider2').slick({
+            infinite: false,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            arrows: false,
+            dots: false,
+        });
+    </script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

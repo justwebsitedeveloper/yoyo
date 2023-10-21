@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./../img/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="./../css/bootstrap.css">
+    <link rel="stylesheet" href="./../css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./../css/slick.css" />
+    <link rel="stylesheet" href="./../css/plyr.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../js/OwlCarousel/css/owl.carousel.css">
+    <link href="./../css/hy-drawer.css" rel="stylesheet" type="text/css">
+    <script defer src="./../js/hy-drawer.min.js"></script>
+    <script src="./../js/header.js"></script>
+    <title>YOYO Starz - Samantha's Profile</title>
+</head>
+
+<body class="tamil">
+        <div class="modal fade bd-example-modal-xl show" tabindex="-1" id="popupmodal" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-modal="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content popup_bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    &times;
+                </button>
+                <div class="modal-body disflex modal_pad5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="popup_logo">
+                                <img src="./../img/logo.svg">
+                            </div>
+                            <div class="modal-camera-icon">
+                                <img src="./../img/popup/video-call-icon.png">
+                            </div>
+                            <p class="popup_text text-white">உங்கள் அபிமான நட்சத்திரங்கள் உங்களுக்காக. எங்கேயும் எப்போதும்</p>
+                            <div class="d-flex store-icons-home">
+                                <div class="mr-3">
+                                    <a href="#">
+                                        <img src="./../img/home/Gplay.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ml-3">
+                                    <a href="#">
+                                        <img src="./../img/home/istore.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 popup_banner_div">
+                            <img class="popup_banner_img" src="./../img/home/banner-videocall.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="h-top-fixed">
+            <nav class="navbar navbar-expand-lg navbar-light" id="header_nav">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./../img/logo.svg" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto tamil_header">
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo-about.html">எங்களை பற்றி 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="starzfeed.html">நட்சத்திர தொகுப்பு 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo_starz.html">யோயோ நட்சத்திரங்கள்</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-download">டவுண்லோட்</button>
+                            </li>
+                            <li class="nav-item">
+                                <div class="lang-drop">
+                                    <select class="lang-selector">
+                                        <option value="english">ENG</option>
+                                        <option value="tamil" selected>தமிழ்</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="mob_header" class="col d-lg-none">
+            <div class="col-2 float-left p-0">
+                <a id="dcmenuEl" href="javascript:void(0);">
+                    <img src="./../img/Hamburger/menu.png"  class="fa fa-bars">
+                </a>
+            </div>
+            <div class="col-7 float-left pl-0">
+                <div style="width: 160px;margin: 0 auto">
+                    <div class="logo_div">
+                        <img src="./../img/logo-color.svg" class="logowid" title="Yoyo Starz" alt="YOYO Starz" onclick="window.location.href = 'index.html';">
+                    </div>
+                </div>
+            </div>
+            
+            <div style="clear:both"></div>
+        </div>
+        <div class="newclass_menu_query1" id="responsivemnu" data-prevent-default="true" mouse-events="false" style="display:none">
+            <div class="res_container pad0">
+                   
+                <ul class="mobile_menu_ul p-0">
+                    <li class="">
+                        <div class="col-10 float-left p-0"><img src="./../img/Hamburger/logo-color.png"></div>
+                        <div class="col-2 float-right p-0 colse_div" ><img  src="./../img/Hamburger/close.png"></div>
+                        <div class="clearfix"></div>
+                </li>
+                <li class="lang_selector">
+                    <span class="lang eng  mr-2" id="english">English |</span>
+                    <span class="lang tam active" id="tamil">தமிழ்</span>
+                </li>
+                    <li><div class="menu_brd"></div></li>
+                    <li id="parent_home_mob">
+                        <a class="" href="index.html">ஹோம்</a>
+                    </li>
+                    <li>
+                        <a href="yoyo-about.html">எங்களை பற்றி</a>
+                    </li>
+                    <li>
+                        <a href="starzfeed.html">நட்சத்திர தொகுப்பு</a>
+                    </li>
+                    <li>
+                        <a href="yoyo_starz.html">யோயோ நட்சத்திரங்கள்</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../img/home/Gplay.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./../img/home/istore.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <section class="profile_banner">
+        <div class="h-banner profile-banner">
+            <img class="h-banner-img " src="./../img/profile/banner.png" alt="About Banner">
+            <div class="profile-banner-content">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-md-6 col profile-details">
+                            <h4>சமந்தா</h4>
+                            <h5>அக்கினேனி</h5>
+                            <div class="profile-likes"><img src="./../img/starz/heart.png" alt=""> <span>5.1 M</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="mobile_view text-center">
+        <div class="profile_img_view">
+            <img class="mob_prof" src="./../img/profile/samantha_banner.png">
+        </div>
+    </div>
+    <section class="profile-about">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-4 profile-about-left">
+                    <h3>About</h3>
+                    <h4>சமந்தா</h4>
+                    <div class="col text-right prof_follow"><img src="./../img/starz/heart.png" alt=""> <span>5.1 M</span></div>
+                    <p>Samantha Akkineni is an Indian actress and model. She has established a career in the Telugu and
+                        Tamil film industries. She has emerged as a leading actress in the South Indian film industry.
+                        While pursuing a degree in commerce, Samantha worked part-time on modelling assignments. </p>
+                </div>
+                <div class="col-md-7 profile-about-right">
+                    <div class="row">
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./../img/profile/birthday.png" alt="">
+                            <h6>பிறந்த நாள்
+                                </h6>
+                            <p>ஜூன் 30, 1989</p>
+                        </div>
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./../img/profile/nationality.png" alt="">
+                            <h6>குடியுரிமை
+                                </h6>
+                            <p>இந்தியன்</p>
+                        </div>
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./../img/profile/Occupation.png" alt="">
+                            <h6>தொழில்</h6>
+                            <p>நடிகை</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./../img/profile/First-movie.png" alt="">
+                            <h6>முதல் படம்
+                                </h6>
+                            <p>Ye Maaya Chesave</p>
+                        </div>
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./../img/profile/industry.png" alt="">
+                            <h6>தொழில்</h6>
+                            <p>கோலிவுட்,<br> டோலிவுட்</p>
+                        </div>
+                        <div class="profile-info-individual col-4 col-sm-4 col-md-4">
+                            <img src="./../img/profile/favourite-food.png" alt="">
+                            <h6>பிடித்த உணவு
+                                </h6>
+                            <p>பாஸ்தா</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  class="in-the-news-section">
+            <h3 class="profile-section-head text-center">நட்சத்திர செய்திகள்</h3>
+            
+        <div class="container">
+            <div class="col-md-12 disflex">
+                <div class="col col-md-4 ">
+                        <a href="news.html">
+                    <div class="in-the-news-div">
+                        <img class="" src="./../img/profile/inthenews1.png">
+                        <div class="news-body">
+                            <h4 class="title">YOYO partners with Vijay films to promotive movie</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col col-md-4 ">
+                        <a href="news.html">
+                    <div class="in-the-news-div">
+                        <img class="" src="./../img/profile/inthenews2.png" alt="Card image cap">
+                        <div class="news-body">
+                            <h4 class="title">YOYO partners with Vijay films to promotive movie</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col col-md-4 ">
+                        <a href="news.html">
+                    <div class="in-the-news-div">
+                        <img class="" src="./../img/profile/inthenews3.png" alt="Card image cap">
+                        <div class="news-body">
+                            <h4 class="title">YOYO partners with Vijay films to promotive movie</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                </div>
+                </div>
+               
+
+    </section>
+        <div class="section profile-section exclusive-videos">
+            <h3 class="profile-section-head text-center">பிரத்யேக வீடியோக்கள்
+                </h3>
+            <div class="profile-section-content">
+
+                <div class="video-section owl-carousel owl-them">
+                    <div class="item">
+                        <video class="js-player" playsinline poster="./../img/profile/video-assests/trailer1.png">
+                            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                                type="video/mp4" size="720">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video class="js-player" playsinline poster="./../img/profile/video-assests/trailer2.png">
+                            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                                type="video/mp4" size="720">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video class="js-player" playsinline poster="./../img/profile/video-assests/trailer3.png">
+                            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                                type="video/mp4" size="720">
+                        </video>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="section profile-section exclusive-pictures">
+            <h3 class="profile-section-head text-center">பிரத்யேக படங்கள்
+                </h3>
+            <div class="profile-section-content">
+                <div class="pictures-section">
+                    <div class="img-section owl-carousel owl-them">
+                        <div class="item">
+                            <img src="./../img/profile/expics-1.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="./../img/profile/expics-2.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="./../img/profile/expics-3.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="./../img/profile/expics-4.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="./../img/profile/expics-1.png" alt="" />
+                        </div>
+                        <div class="item">
+                            <img src="./../img/profile/expics-2.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section profile-section did-you-know">
+            <div class="profile-section-content">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="did-you-know-content">
+                                <h3 class="profile-section-head">உங்களுக்கு <br /> தெரியுமா!</h3>
+                                <div class="did-you-know-inner">
+                                    <p>சமந்தா 4 திரைப்பட விருதுகள் வென்று உள்ளார்
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="did-you-know-img">
+                                <img src="./../img/profile/samantha.png" alt="">
+                                <p class="did-you-know-name">சமந்தா</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section profile-section trailers">
+            <h3 class="profile-section-head text-center trailer_head">டிரெய்லர்கள்</h3>
+            <div class="profile-section-content">
+                <div class="">
+                    <div class="trailers-section owl-carousel owl-them">
+                        <div class="item">
+                            <div class="player plyr__video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/ByXwBjR-o5c?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                                    allowfullscreen allowtransparency allow="autoplay"></iframe>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="player plyr__video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/MJxEQPMh_io?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                                    allowfullscreen allowtransparency allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="player plyr__video-embed">
+                                <iframe
+                                    src="https://www.youtube.com/embed/3n3L428I8MQ?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                                    allowfullscreen allowtransparency allow="autoplay"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section latest-movies">
+            <h3 class="text-center latest_movies_head">சமீபத்திய திரைப்படங்கள்
+                </h3>
+            <div class="latest_movies_section">
+                <div class="container">
+                    <div class="col-md-12 d-lg-flex d-md-flex p-0 mb-5">
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="./../img/profile/latest-movies/movies_1.png">
+                            <div class="movie_name">தெறி </div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="./../img/profile/latest-movies/movies_2.png">
+                            <div class="movie_name"> நீதானே என் பொன்வசந்தம்</div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="./../img/profile/latest-movies/movies_3.png">
+                            <div class="movie_name">இரும்பு திரை</div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="./../img/profile/latest-movies/movies_4.png">
+                            <div class="movie_name">அ அ அ </div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="./../img/profile/latest-movies/movies_5.png">
+                            <div class="movie_name">மெர்சல்</div>
+                        </div>
+                        <div class="col-md-2 text-center mb-2">
+                            <img class="movie_img" src="./../img/profile/latest-movies/movies_6.png">
+                            <div class="movie_name">சீமராஜா</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+                <div class="footer1">
+                    <div class="container d-flex justify-content-between flex-wrap p-0">
+                        <div class="foot-left col-md-4">
+                            <img src="./../img/logo-color.svg" alt="">
+                            <p>நட்சத்திரங்களையும், ஃபேன்களையும் இணைக்கும் ஒரு நவீன செயலிதான் யோயோ.</p>
+                            <strong>பதிப்புரிமை 2018 &copy; அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை</strong>
+                        </div>
+                        <div class="foot-right d-flex flex-wrap col p-0">
+                            <div class="foot-quick-links col ">
+                                <div class="foot-right-title">யோயோ</div>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">ஹோம்</a>
+                                    </li>
+                                    <li>
+                                        <a href="yoyo-about.html">எங்களை பற்றி</a>
+                                    </li>
+                                    <li>
+                                        <a href="starzfeed.html">நட்சத்திர தொகுப்பு</a>
+                                    </li>
+                                    <li>
+                                        <a href="yoyo_starz.html"> யோயோ நட்சத்திரங்கள்</a>
+                                    </li>
+                                    <li>
+                                        <a href="bhishma-about.html">பீஷ்மா</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="foot-quick-links col">
+                                <div class="foot-right-title">கம்யூனிட்டி</div>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCK8D-_Ru3Z_tNyi8xWXgnag?view_as=subscriber" target="_blank">யூடியூப்</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/yoyostarz.starz.9" target="_blank">பேஸ்புக்</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/yoyostarz4u/" target="_blank">இன்ஸ்டாகிராம்</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/yoyostarz4u" target="_blank">ட்விட்டர்</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="foot-quick-links col">
+                                <div class="foot-right-title">லீகல்</div>
+                                <ul>
+                                    <li>
+                                        <a href="privacy.html" target="_blank">தனியுரிமை கொள்கை</a>
+                                    </li>
+                                    <li>
+                                        <a href="terms.html" target="_blank">விதிமுறைகள் மற்றும் நிபந்தனைகள்</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="foot-quick-links col">
+                                <div class="foot-right-title">உதவி</div>
+                                <ul>
+                                    <li>
+                                        <a href="yoyo-about.html#contact-us">தொடர்பில் இருங்கள்</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">அடிக்கடி கேட்கப்படும் கேள்விகள்</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="div-foot text-center text-white">
+                    Powered by பீஷ்மா மீடியா லேப்ஸ் தமிழ் பிரைவேட் லிமிட்டெட்
+                </div>
+            </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+
+
+        <script src="./../js/OwlCarousel/js/owl.carousel.js"></script>
+
+        <script src="./../js/plyr.js"></script>
+        <script>const player = new Plyr('.player');</script>
+        <script>
+            $('.img-section').owlCarousel({
+                stagePadding: 200,
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 2,
+                lazyLoad: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        stagePadding: 60
+
+                    },
+                    600: {
+                        items: 1,
+
+                    },
+                    1000: {
+                        items: 2,
+
+                    },
+                    1200: {
+                        items: 2,
+
+                    },
+                    1400: {
+                        items: 2,
+
+                    },
+                    1600: {
+                        items: 2,
+
+                    },
+                    1800: {
+                        items: 2,
+
+                    }
+                }
+
+            })
+            $('.video-section,.trailers-section').owlCarousel({
+                stagePadding: 200,
+                loop: true,
+                margin: 10,
+                dots: false,
+                items: 1,
+                lazyLoad: true,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        stagePadding: 60,
+                        nav: false,
+                    },
+                    600: {
+                        items: 1,
+                        stagePadding: 100,
+                        nav: false,
+                    },
+                    1000: {
+                        items: 1,
+                        stagePadding: 200
+                    },
+                    1200: {
+                        items: 1,
+                        stagePadding: 250
+                    },
+                    1400: {
+                        items: 1,
+                        stagePadding: 300
+                    },
+                    1600: {
+                        items: 1,
+                        stagePadding: 350
+                    },
+                    1800: {
+                        items: 1,
+                        stagePadding: 400
+                    }
+                }
+            })
+
+            var playerSettings = {
+                controls: ['play-large'],
+                fullscreen: { enabled: false },
+                resetOnEnd: true,
+                hideControls: true,
+                keyboard: false,
+                loadSprite: false,
+
+            }
+
+            const players = Plyr.setup('.js-player', playerSettings);
+
+            players.forEach(function (instance, index) {
+                instance.on('play', function () {
+                    players.forEach(function (instance1, index1) {
+                        if (instance != instance1) {
+                            instance1.pause();
+                        }
+                    });
+                });
+            });
+
+            $('.video-section').on('translated.owl.carousel', function (event) {
+                players.forEach(function (instance, index1) {
+                    instance.pause();
+                });
+            });
+            $('.news_slider').owlCarousel({
+                nav: true,
+                items: 1,
+                loop: true,
+                dots: false,
+                margin: 30,
+
+                responsive: {
+                0: {
+                    items: 1,
+                    margin: 10,
+                },
+                600: {
+                    items: 1,
+                    margin: 10,
+                },
+                768: {
+                    items: 2,
+                    margin: 10,
+                },
+                800: {
+                    items: 2,
+                    margin: 10,
+                },
+                900: {
+                    items: 3,
+                    margin: 10,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
+            });
+            $(".owl-nav").addClass("middle-fixed");
+           /* $('.news_slider').on('translated.owl.carousel', function (event) {
+                $('.owl-item').css({ "border": "none", "border-radius": "5px" });
+                $('.owl-item.active').eq(0).css({ "border": "solid 1px #FE0196" });
+                $('.owl-item.active').eq(1).css({ "border-radius": "5px", "box-shadow": "rgba(0, 0, 0, 0.22) 4px 0px 12px 0px" });
+                $('.owl-item.active').eq(2).css({ "border": "solid 1px #FFA427", "border-radius": "5px" });
+            });
+
+          
+
+            $(document).ready(function () {
+                $('.owl-item').css({ "border": "none", "border-radius": "5px" });
+                $('.owl-item.active').eq(0).css({ "border": "solid 1px #FE0196" });
+                $('.owl-item.active').eq(1).css({ "border-radius": "5px", "box-shadow": "rgba(0, 0, 0, 0.22) 4px 0px 12px 0px" });
+                $('.owl-item.active').eq(2).css({ "border": "solid 1px #FFA427" });
+                const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+            });*/
+        </script>
+
+
+</body>
+
+</html>

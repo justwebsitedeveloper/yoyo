@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="./img/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/hy-drawer.css">
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/hy-drawer.min.js"></script>
+    <script src="./js/header.js"></script>
+    <title>Bhishma - About</title>
+</head>
+
+<body>
+    <div class="modal fade bd-example-modal-xl show" tabindex="-1" id="popupmodal" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-modal="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content popup_bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    &times;
+                </button>
+                <div class="modal-body disflex modal_pad5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="popup_logo">
+                                <img src="img/logo.svg">
+                            </div>
+                            <div class="modal-camera-icon">
+                                <img src="img/popup/video-call-icon.png">
+                            </div>
+                            <p class="popup_text text-white">Your favourite STARZ <br />are now just a click away!</p>
+                            <div class="d-flex store-icons-home">
+                                <div class="mr-3">
+                                    <a href="#">
+                                        <img src="./img/home/Gplay.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ml-3">
+                                    <a href="#">
+                                        <img src="./img/home/istore.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 popup_banner_div">
+                            <img class="popup_banner_img" src="./img/home/banner-videocall.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="h-top-fixed">
+            <nav class="navbar navbar-expand-lg navbar-light" id="header_nav">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto bhishma-navbar">
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo-about.html">About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="starzfeed.html">Starz Feed
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo_starz.html">Yoyo Starz</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-download">Download</button>
+                            </li>
+                            <li class="nav-item">
+                                <div class="lang-drop">
+
+                                    <select class="lang-selector">
+                                        <option value="english" selected>ENG</option>
+                                        <option value="tamil">தமிழ்</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="mob_header" class="col d-lg-none">
+            <div class="col-2 float-left p-0">
+                <a id="dcmenuEl" href="javascript:void(0);">
+                    <img src="./img/Hamburger/menu.png"  class="fa fa-bars">
+                </a>
+
+            </div>
+            <div class="col-7 float-left pl-0">
+                <div style="width: 160px;margin: 0 auto">
+                    <div class="logo_div">
+                        <img src="img/logo-color.svg" class="logowid" title="Yoyo Starz" alt="YOYO Starz" onclick="window.location.href = 'index.html';">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div style="clear:both"></div>
+        </div>
+        <div class="newclass_menu_query1" id="responsivemnu" data-prevent-default="true" mouse-events="false" style="display:none">
+            <div class="res_container pad0">
+                   
+                <ul class="mobile_menu_ul p-0">
+                    <li class="">
+                        <div class="col-10 float-left p-0"><img src="img/Hamburger/logo-color.png"></div>
+                        <div class="col-2 float-right p-0 colse_div" ><img  src="img/Hamburger/close.png"></div>
+                        <div class="clearfix"></div>
+                </li>
+                <li class="lang_selector">
+                    <span class="lang eng active mr-2" id="english">English |</span>
+                    <span class="lang tam " id="tamil">தமிழ்</span>
+                </li>
+                    <li><div class="menu_brd"></div></li>
+                    <li id="parent_home_mob">
+                        <a class="" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="yoyo-about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="starzfeed.html">YOYO Feed</a>
+                    </li>
+                    <li>
+                        <a href="yoyo_starz.html">YOYO Starz</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/home/Gplay.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/home/istore.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="h-banner">
+            <img class="h-banner-img" src="./img/about-bhishma/banner.png" alt="About Banner">
+            <div class="h-banner-content h-banner-bhishma">
+                <div class="position-relative text-center d-flex justify-content-center">
+                    <div class="h-banner-content-title h-banner-title-bhishma">
+                        <h3>What Is Bhishma Media Labs?</h3>
+                        <p>A dynamic team of talented, multi-faceted young professionals who came together to make your
+                            celebrity dream come true</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/about-bhishma/bhishma_main.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h5 class="about-header-yoyo about-header-bhishma">BHISHMA</h5>
+                    <p class="about-lead-text">Bhishma is a technologically advanced organisation that provides financial and strategic advice to its clients.</p>
+                    <p class="about-passage">Bhishma’s team is a unique combination of skill sets that brings in-depth knowledge and expertise across various domains. Bhishma’s networking and investment capability extends to multiple verticals and ecosystems.</p>
+                    <p class="about-passage"> YOYO Starz is an unprecedented brainchild of Bhishma Media Labs Tamil Pvt. Ltd., paving the path to Stardom in the entertainment industry. YOYO provides fans an opportunity to speak to their idols and also an opportunity to meet them. It is a platform for dreams to come true. </p>
+                    <p class="about-passage"> Your Celebrity Your Fan!!!!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="map-title map-title-bhishma"><img src="./img/about-bhishma/sub_logo.png" alt=""></div>
+                    <ul class="contact-list">
+                        <li><span><img src="./img/about-yoyo/phone.png" alt=""></span><span>1800 2833 2945</span></li>
+                        <li><span><img src="./img/about-yoyo/location.png" alt=""></span><span>
+                                F1, 1st Floor, No.138, Nungambakkam High Rd, <br> Nungambakkam, Chennai, Tamil Nadu
+                                600034
+                            </span></li>
+                        <li><span><img src="./img/about-yoyo/web.png" alt=""></span><span>bhishma.guru</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="map-outer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.6985854587206!2d80.24791961477149!3d13.054847890801296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266416d0271a5%3A0xe96453b38ad6e2b6!2sBhishma+Technology+Services+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1548714062959"
+                            width="1200" height="1200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+            <div class="footer1">
+                <div class="container d-flex justify-content-between flex-wrap p-0">
+                    <div class="foot-left col-md-4">
+                        <img src="./img/logo-color.svg" alt="">
+                        <p>YOYO is a socially engaging, mobile-based application that contains various user-friendly platforms that connect celebrities and their fans. </p>
+                        <strong>Copyright 2018 &copy; All Rights Reserved</strong>
+                    </div>
+                    <div class="foot-right d-flex flex-wrap col p-0">
+                        <div class="foot-quick-links col ">
+                            <div class="foot-right-title">YOYO</div>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo-about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="starzfeed.html">Starz Feed</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo_starz.html">YOYO Starz</a>
+                                </li>
+                                <li>
+                                    <a href="bhishma-about.html">Bhishma</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Community</div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCK8D-_Ru3Z_tNyi8xWXgnag?view_as=subscriber" target="_blank">YouTube</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/yoyostarz.starz.9" target="_blank">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/yoyostarz4u/" target="_blank">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/yoyostarz4u" target="_blank">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Legal</div>
+                            <ul>
+                                <li>
+                                    <a href="privacy.html" target="_blank">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html" target="_blank">Terms and Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Help</div>
+                            <ul>
+                                <li>
+                                    <a href="yoyo-about.html#contact-us">Get in touch</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="div-foot text-center text-white">
+                Powered by BHISHMA LABS TAMIL PVT.LTD
+            </div>
+        </footer>
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

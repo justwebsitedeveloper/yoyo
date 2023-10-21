@@ -1,0 +1,22 @@
+.hi-slide { position: relative; width: 1200px; height: 292px; margin: 245px auto 0; }
+.hi-slide .hi-next, .hi-slide .hi-prev { position: absolute; top: 50%; width: 50px; height: 50px; margin-top: 60px; border-radius: 50px; line-height: 50px; text-align: center; cursor: pointer; background-color: #e307c1; color: #fff;  -webkit-transition: all 3s ease-in-out;  -o-transition: all 3s ease-in-out;  transition: all 3s ease-in-out; font-size: 30px; }
+.hi-slide .hi-next:hover, .hi-slide .hi-prev:hover { opacity: 1; background-color: #444; }
+.hi-slide .hi-prev { left: -60px; }
+.hi-slide1 .hi-prev::before { content: '<'; }
+.hi-slide .hi-next { right: -60px; }
+.hi-slide1 .hi-next::before { content: '>'; }
+.hi-slide > ul { list-style: none; position: relative; width: 754px; height: 292px; margin: 0; padding: 0; }
+.hi-slide > ul > li { overflow: hidden; position: absolute; z-index: 0; left: 377px; top: 146px; width: 0; height: 0; margin: 0; padding: 0; border-radius: 5px;  cursor: pointer; }
+.hi-slide > ul > li > img { width: 100%; height: 100%; }
+
+
+.hi-slide2 { position: relative; width: 754px; height: 292px; margin: 95px auto 0; }
+.hi-slide2 .hi-next, .hi-slide2 .hi-prev { position: absolute; top: 50%; width: 50px; height: 50px; margin-top: 0px; border-radius: 50px; line-height: 50px; text-align: center; cursor: pointer; background-color: #e307c1; color: #fff; -webkit-transition: all 3s ease-in-out; -o-transition: all 3s ease-in-out; transition: all 3s ease-in-out; font-size: 30px; }
+.hi-slide2 .hi-next:hover, .hi-slide2 .hi-prev:hover { opacity: 1; background-color: #444; }
+.hi-slide2 .hi-prev { left: -60px; }
+.hi-slide21 .hi-prev::before { content: '<'; }
+.hi-slide2 .hi-next { right: 40px; }
+.hi-slide21 .hi-next::before { content: '>'; }
+.hi-slide2 > ul { list-style: none; position: relative; width: 579px; height: 292px; margin: 0; padding: 0; }
+.hi-slide2 > ul > li { overflow: hidden; position: absolute; z-index: 0; left: 377px; top: 146px; width: 0; height: 0; margin: 0; padding: 0;  border-radius: 5px;  cursor: pointer; }
+.hi-slide2 > ul > li > img { width: 100%; height: 100%; }

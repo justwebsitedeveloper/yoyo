@@ -1,0 +1,83 @@
+@media screen {
+    .hy-drawer-content,
+    .hy-drawer-scrim {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        z-index: 1000;
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0)
+    }
+    .hy-drawer-content::before
+    {
+        content: url(./../img/Hamburger/yoyo.png);
+        bottom: -35px;
+        left: -22px;
+        -webkit-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+                transform: scale(0.7);
+        position: absolute;
+    }
+    .hy-drawer-scrim {
+        left: 0;
+        width: 100vw;
+        opacity: 0;
+        pointer-events: none;
+        background: rgba(0, 0, 0, .5);
+        -webkit-tap-highlight-color: transparent
+    }
+    .hy-drawer-content {
+        overflow: hidden;
+       
+        width:80vw;
+       
+        color: #fff;
+        -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+                box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+        contain: strict;
+      
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#fc5684), to(#f55b59));
+      
+        background-image: -webkit-linear-gradient(#fc5684, #f55b59);
+      
+        background-image: -o-linear-gradient(#fc5684, #f55b59);
+      
+        background-image: linear-gradient(#fc5684, #f55b59);
+    }
+    .hy-drawer-content.hy-drawer-left {
+        left: -2500px;
+       
+    }
+    .hy-drawer-content.hy-drawer-right {
+        right: -500px
+    }
+   
+  
+    .hy-drawer-content.hy-drawer-left.hy-drawer-opened {
+        left: 0!important;
+        -webkit-transform: translateX(0)!important;
+            -ms-transform: translateX(0)!important;
+                transform: translateX(0)!important
+    }
+    .hy-drawer-content.hy-drawer-right.hy-drawer-opened {
+        right: 0!important;
+        -webkit-transform: translateX(0)!important;
+            -ms-transform: translateX(0)!important;
+                transform: translateX(0)!important
+    }
+  
+    
+  }
+  
+  @media print {
+    .hy-drawer-scrim {
+        display: none!important
+    }
+    .hy-drawer-content {
+        -webkit-transform: none!important;
+            -ms-transform: none!important;
+                transform: none!important
+    }
+  }

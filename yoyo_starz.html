@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./img/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/hy-drawer.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/hy-drawer.min.js"></script>
+    <script src="./js/header.js"></script>
+
+    <title>YOYO-YOYO Starz</title>
+</head>
+
+<body>
+    <div class="modal fade bd-example-modal-xl show" tabindex="-1" id="popupmodal" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-modal="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content popup_bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    &times;
+                </button>
+                <div class="modal-body disflex modal_pad5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="popup_logo">
+                                <img src="img/logo.svg">
+                            </div>
+                            <div class="modal-camera-icon">
+                                <img src="img/popup/video-call-icon.png">
+                            </div>
+                            <p class="popup_text text-white">Your favourite STARZ
+                                    <br />are now just a click away!</p>
+                            <div class="d-flex store-icons-home">
+                                <div class="mr-3">
+                                    <a href="#">
+                                        <img src="./img/home/Gplay.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ml-3">
+                                    <a href="#">
+                                        <img src="./img/home/istore.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 popup_banner_div">
+                            <img class="popup_banner_img" src="./img/home/banner-videocall.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="">
+            <nav class="navbar navbar-expand-lg navbar-light" id="header_nav">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/logo-color.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse feed-navbar" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="yoyo-about.html">About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="starzfeed.html">Starz Feed
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="yoyo_starz.html">Yoyo Starz</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-download">Download</button>
+                            </li>
+                            <li class="nav-item">
+                                <div class="lang-drop">
+
+                                    <select class="lang-selector">
+                                        <option value="english" selected>ENG</option>
+                                        <option value="tamil">தமிழ்</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="mob_header" class="col d-lg-none">
+            <div class="col-2 float-left p-0">
+                <a id="dcmenuEl" href="javascript:void(0);">
+                    <img src="./img/Hamburger/menu.png"  class="fa fa-bars">
+                </a>
+
+            </div>
+            <div class="col-7 float-left pl-0">
+                <div style="width: 160px;margin: 0 auto">
+                    <div class="logo_div">
+                        <img src="img/logo-color.svg" class="logowid" title="Yoyo Starz" alt="YOYO Starz" onclick="window.location.href = 'index.html';">
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div style="clear:both"></div>
+        </div>
+        <div class="newclass_menu_query1" id="responsivemnu" data-prevent-default="true" mouse-events="false" style="display:none">
+            <div class="res_container pad0">
+                   
+                <ul class="mobile_menu_ul p-0">
+                    <li class="">
+                        <div class="col-10 float-left p-0"><img src="img/Hamburger/logo-color.png"></div>
+                        <div class="col-2 float-right p-0 colse_div" ><img  src="img/Hamburger/close.png"></div>
+                        <div class="clearfix"></div>
+                </li>
+                <li class="lang_selector">
+                    <span class="lang eng active mr-2" id="english">English |</span>
+                    <span class="lang tam " id="tamil">தமிழ்</span>
+                </li>
+                    <li><div class="menu_brd"></div></li>
+                    <li id="parent_home_mob">
+                        <a class="" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="yoyo-about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="starzfeed.html">YOYO Feed</a>
+                    </li>
+                    <li>
+                        <a href="yoyo_starz.html">YOYO Starz</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/home/Gplay.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/home/istore.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+    <section class="top_starz mb-5">
+        <div class="container p-0">
+
+            <div class="col-md-12 float-left p-0 top_trending_div disflex">
+                <div class="col-md-5 p-0 float-left phone_div">
+                    <div class="full_phone">
+                        <img class="starzimg" src="img/yoyo_starz/phone.png">
+                        <div class="loading_icon"><img src="img/loading.gif"></div>
+                        <img class="animated fadeIn inner_profile" src="img/yoyo_starz/anupama.png">
+
+                        <img class="heart_icon " src="img/yoyo_starz/heart1.png">
+                        <div class="hearts"></div>
+                    </div>
+                </div>
+                <div class="col-md-7 float-left top_trending ">
+                    <div class="yoyo_tit">Top Trending</div>
+                    <div class="top_trending_content animated fadeIn col-md-12 float-left pl-0 pr-0">
+
+
+                        <div class="followers_count float-right">
+                            <span class="fa fa-heart heart"></span>&nbsp;
+                            <span class="followers">4.1 Million</span>
+                        </div>
+
+                        <div class="starz_name_title">
+                            <h3 class="starz_name">Starz feed</h3>
+                        </div>
+                        
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="customer-logos slider ">
+                        <div class="slide" data-src="img/yoyo_starz/dulquar.png" data-name="Dulqur" data-follow="4.1 Million"
+                            data-desc="Now1 imagine if this greetind could come from your favourite celebrity? Wouldn't that make the day very special and memorable? Yes, with YOYO App, now you can send and receive customised greetings and messages from your STARZ to friends, family and yourself.">
+                            <img src="./img/yoyo_starz/dul.png">
+                        </div>
+                        <div class="slide" data-src="img/yoyo_starz/deepika.png" data-name="Deepika" data-follow="3.1 Million"
+                            data-desc="Now2 imagine if this greetind could come from your favourite celebrity? Wouldn't that make the day very special and memorable? Yes, with YOYO App, now you can send and receive customised greetings and messages from your STARZ to friends, family and yourself.">
+                            <img src="./img/yoyo_starz/dee.png">
+                        </div>
+                        <div class="slide" data-src="img/yoyo_starz/atharva.png" data-name="Atharva" data-follow="400 k"
+                            data-desc="Now3 imagine if this greetind could come from your favourite celebrity? Wouldn't that make the day very special and memorable? Yes, with YOYO App, now you can send and receive customised greetings and messages from your STARZ to friends, family and yourself.">
+                            <img src="./img/yoyo_starz/ath.png">
+                        </div>
+                        <div class="slide" data-src="img/yoyo_starz/hrithik.png" data-name="Hritik" data-follow="7.1 Million"
+                            data-desc="now4 imagine if this greetind could come from your favourite celebrity? Wouldn't that make the day very special and memorable? Yes, with YOYO App, now you can send and receive customised greetings and messages from your STARZ to friends, family and yourself.">
+                            <img src="./img/yoyo_starz/hrik.png">
+                        </div>
+                        <div class="slide active" data-src="img/yoyo_starz/anupama.png" data-name="Anupama" data-follow="2.1 Million"
+                            data-desc="now5 imagine if this greetind could come from your favourite celebrity? Wouldn't that make the day very special and memorable? Yes, with YOYO App, now you can send and receive customised greetings and messages from your STARZ to friends, family and yourself.">
+                            <img src="./img/yoyo_starz/anu.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <section class="celebrities_grid mt-5 mb-5">
+        <div class="container p-0">
+
+
+            <div class="col-md-12  disflex align-items-center mb-5">
+                <div class="col-md-5 pl-0">
+                    <div class="yoyo_starz">YOYO Starz</div>
+                </div>
+                <div class="col-md-4  pl-0 ">
+                    <input type="text" id="myInput" onkeyup="autoSearch()" placeholder="Search for Your Favourite Celebrity" name="search" class="search">
+                    <button class="search_icon" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <div class="col col-md-3 disflex float-left p-0">
+
+                    <div class="sorting mr-2 p-0 float-left">
+                            <div class="dropdown sort_by_drop">
+                                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-sort-amount-desc sorting_icon" aria-hidden="true"></i>&nbsp;Sort By
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Ascending</a>
+                                      <a class="dropdown-item" href="#">Descending</a>
+                                      <a class="dropdown-item" href="#">Trending</a>
+                                      <a class="dropdown-item" href="#">More Followers</a>
+                                      <a class="dropdown-item" href="#">Recently Added</a>
+                                    </div>
+                                  </div>
+                       
+                    </div>
+                    <div class="sorting ml-2 p-0 float-left text-right">
+                            <div class="dropdown  sort_by_drop">
+                                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="img/yoyo_starz/filter.png">&nbsp;Filter By
+                                    </button>
+                                    <div class="filter_by_list dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                            <div class="row">
+                                                    <div class="col-3 pr-0 filter_left_sec">
+                                                      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                        <a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">Gender</a>
+                                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Languages</a>
+                                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Categories</a>
+                                                        <a class="nav-link " id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="true">Viewership</a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-8 filter_section">
+                                                        <div class="tab-content" id="v-pills-tabContent">
+                                                            <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                                <div class="filter_head  mb-3">Gender <span class="float-right close_text">×</span></div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="male" >
+                                                                    <label class="custom-control-label" for="male">Male</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="female" >
+                                                                    <label class="custom-control-label" for="female">Female</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                                <div class="filter_head  mb-3">Languages <span class="float-right close_text">×</span></div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="eng" >
+                                                                    <label class="custom-control-label" for="eng">English</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="tam" >
+                                                                    <label class="custom-control-label" for="tam">Tamil</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="tel" >
+                                                                        <label class="custom-control-label" for="tel">Telgu</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="san" >
+                                                                    <label class="custom-control-label" for="san">Sanskirt</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                                <div class="filter_head  mb-3">Categories<span class="float-right close_text">×</span></div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="act">
+                                                                    <label class="custom-control-label" for="act">Actor</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="actrs" >
+                                                                    <label class="custom-control-label" for="actrs">Actress</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="sing" >
+                                                                    <label class="custom-control-label" for="sing">Singer</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="music">
+                                                                    <label class="custom-control-label" for="music">Music Director</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade " id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                                <div class="filter_head  mb-3">Viewership<span class="float-right close_text">×</span></div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="thous">
+                                                                    <label class="custom-control-label" for="thous">0-10K</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="5000" >
+                                                                    <label class="custom-control-label" for="5000">10K-50K</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="10000" >
+                                                                    <label class="custom-control-label" for="10000">50k-100k</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="1M" >
+                                                                    <label class="custom-control-label" for="1M">100K-1M</label>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                    </div>
+                                  </div>
+                        
+
+                    </div>
+                </div>
+                
+              
+            </div>
+            
+            
+            <div class="col-md-12 starz_list  mb-4 parentdiv pr-0" id="myTable">
+
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/samantha.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Samantha</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/anupama.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Anupama</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/deepika.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Deepika</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/nayanthara.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Nayanthara</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/anupama.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Anupama</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/nikki.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Nikki Galrani</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/maddy.png">
+                        </a>
+
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Madhavan</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/hrithik.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Hrithik</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/dulquer.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Dulquer</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/sam.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Priya Anand</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/hrithik.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Hrithik</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 pl-0 childdiv mb-5">
+                    <div class="celebrity mb-2">
+                        <a href="profile.html">
+                            <img src="img/yoyo_starz/starz/dulquer.png">
+                        </a>
+                    </div>
+                    <div class="starz_details">
+                        <div class="fontlight  mb-1">Dulquer</div>
+                        <div class="followers_count">
+                            <span class="fa fa-heart heart"></span>&nbsp;4.1 Million</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="not_found_starz text-center">No Celebrity Found</div>
+
+
+
+
+
+
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+            <div class="footer1">
+                <div class="container d-flex justify-content-between flex-wrap p-0">
+                    <div class="foot-left col-md-4">
+                        <img src="./img/logo-color.svg" alt="">
+                        <p>YOYO is a socially engaging, mobile-based application that contains various user-friendly platforms that connect celebrities and their fans. </p>
+                        <strong>Copyright 2018 © All Rights Reserved</strong>
+                    </div>
+                    <div class="foot-right d-flex flex-wrap col p-0">
+                        <div class="foot-quick-links col ">
+                            <div class="foot-right-title">YOYO</div>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo-about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="starzfeed.html">Starz Feed</a>
+                                </li>
+                                <li>
+                                    <a href="yoyo_starz.html">YOYO Starz</a>
+                                </li>
+                                <li>
+                                    <a href="bhishma-about.html">Bhishma</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Community</div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCK8D-_Ru3Z_tNyi8xWXgnag?view_as=subscriber" target="_blank">YouTube</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/yoyostarz.starz.9" target="_blank">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/yoyostarz4u/" target="_blank">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/yoyostarz4u" target="_blank">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Legal</div>
+                            <ul>
+                                <li>
+                                    <a href="privacy.html" target="_blank">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms.html" target="_blank">Terms and Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot-quick-links col">
+                            <div class="foot-right-title">Help</div>
+                            <ul>
+                                <li>
+                                    <a href="yoyo-about.html#contact-us">Get in touch</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="div-foot text-center text-white">
+                Powered by BHISHMA LABS TAMIL PVT.LTD
+            </div>
+        </footer>
+        
+        <style>
+        
+    </style>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script>
+        function autoSearch() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput"); 
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByClassName("childdiv");
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByClassName("fontlight")[0];
+                
+                if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                    tr[i].classList.add("none_star");
+                    console.log(tr.length);
+                    var tr_len=tr.length;
+                    var dnone=$(".none_star").length;
+                    if(tr_len==dnone)
+                    {
+                       // $(".not_found_starz").show();
+                    }
+                    else
+                    {
+                        //$(".not_found_starz").hide();
+                    }
+                }
+                }       
+            }
+            }
+        $(document).ready(function () {
+
+
+            $(document).on("click", ".dropdown-menu.show", function (e) {
+                // console.log( $(this).parent().hasClass( "show" ));
+                if( $(this).parent().is(".show"))
+                {
+                    console.log($(this).parent().is(".show"));
+                    $(this).parent().toggleClass('show');
+                }
+            });
+            $(".close_text").click(function()
+            {
+                $(".dropdown-menu").removeClass("show");
+            });
+            
+
+            $(".loading_icon").hide();
+            var name = $(".slide.active").data("name");
+            var desc = $(".slide.active").data("desc");
+            var followers = $(".slide.active").data("follow");
+            $(".starz_name").html("").html(name);
+            $(".starz_name_title").attr('data-content', name);
+            $(".starz_desc").html("").html(desc);
+            $(".followers").html("").html(followers);
+
+
+            $('.customer-logos').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                draggable: false,
+                swipe: false,
+                prevArrow: "",
+
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+            
+               
+                $('.customer-logos').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+                    $(".inner_profile").hide();
+                    $(".loading_icon").show();
+                   
+                    var src = $('.slick-slide.slick-current.slick-active').prev().data('src');
+                    var name = $(".slick-slide.slick-current.slick-active").prev().data("name");
+                   
+                    var followers = $(".slick-slide.slick-current.slick-active").prev().data("follow");
+                    $(".inner_profile").removeClass("fadeIn").attr("src", "").attr("src", src);
+                    $(".starz_name").html("").html(name);
+                    $(".starz_name_title").attr('data-content', name);
+                  
+                    $(".followers").html("").html(followers);
+                    setTimeout(function () { $(".loading_icon").hide(); $(".inner_profile").addClass("fadeIn"); $(".inner_profile").show(); }, 200);
+                    
+                });
+         
+            $(".slick-next.slick-arrow").click(function () {
+                $(".inner_profile").hide();
+                $(".loading_icon").show();
+               
+                var src = $('.slick-slide.slick-current.slick-active').prev().data('src');
+                var name = $(".slick-slide.slick-current.slick-active").prev().data("name");
+               
+                var followers = $(".slick-slide.slick-current.slick-active").prev().data("follow");
+                $(".inner_profile").removeClass("fadeIn").attr("src", "").attr("src", src);
+                $(".starz_name").html("").html(name);
+                $(".starz_name_title").attr('data-content', name);
+              
+                $(".followers").html("").html(followers);
+                setTimeout(function () { $(".loading_icon").hide(); $(".inner_profile").addClass("fadeIn"); $(".inner_profile").show(); }, 200);
+            });
+
+            $('.slide').click(function () {
+                var indx = $(this).data("slick-index");
+               /* 
+                $(".inner_profile").hide();
+                $(".loading_icon").show();
+               var src = $(this).data('src');
+                var name = $(this).data("name");
+               
+                var followers = $(this).data("follow");
+                $(".inner_profile").removeClass("fadeIn").attr("src", "").attr("src", src);
+                $(".starz_name").html("").html(name);
+                $(".starz_name_title").attr('data-content', name);
+              
+                $(".followers").html("").html(followers);
+                setTimeout(function () { $(".loading_icon").hide(); $(".inner_profile").addClass("fadeIn"); $(".inner_profile").show(); }, 200);*/
+                $('.customer-logos').slick('slickGoTo', indx + 1);
+            });
+        });
+        function heartrun() {
+            var b = Math.floor((Math.random() * 100) + 2);
+            var d = ["flowOne", "flowTwo", "flowThree"];
+            var a = ["colOne", "colTwo", "colThree", "colFour", "colFive", "colSix"];
+            var c = (Math.random() * (1.6 - 1.2) + 1.2).toFixed(1);
+            c = 4;
+            $('<div class="heart part-' + b + " " + a[Math.floor((Math.random() * 6))] + '" style="font-size:' + Math.floor(Math.random() * (50 - 22) + 22) + 'px;"><i class="fa fa-heart"></i></div>').appendTo(".hearts").css({
+                animation: "" + d[Math.floor((Math.random() * 3))] + " " + c + "s linear"
+            });
+            $(".part-" + b).show();
+            setTimeout(function () {
+                $(".part-" + b).remove()
+            }, c * 900)
+        }
+        setInterval(function () { heartrun(); }, 500);
+    </script>
+</body>
+
+</html>
